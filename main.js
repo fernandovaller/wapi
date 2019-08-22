@@ -84,7 +84,8 @@ function enviarMensagem(message) {
 //Verificar fila de msg
 var setIntervalID = setInterval(function() {
 
-    console.log(window.WAPI.getAllContacts());
+    var cc = window.WAPI.getAllContacts();
+    console.log(cc);
 
     if (localStorage.flagEtapa == 0) {
 
