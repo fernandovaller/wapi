@@ -84,6 +84,8 @@ function enviarMensagem(message) {
 //Verificar fila de msg
 var setIntervalID = setInterval(function() {
 
+    console.log(window.WAPI.getAllContacts());
+
     if (localStorage.flagEtapa == 0) {
 
         axios.get('https://wpback.000webhostapp.com/mensagem-next')
